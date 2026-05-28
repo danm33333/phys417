@@ -45,7 +45,7 @@ st.markdown(
 # Title
 # ---------------------------------------------------
 
-st.title("🐦 EcoBirdNet Bird Species Classifier")
+st.title("EcoBirdNet Bird Species Classifier")
 
 st.write(
     """
