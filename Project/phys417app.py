@@ -380,8 +380,8 @@ if uploaded_file is not None:
         """
         <p style="font-size:14px;">
         <i>
-        Click names to verify with National Audubon Society's
-        guide to North American Birds
+        Click names to verify with the National Audubon Society's
+        guide to North American birds
         </i>
         </p>
         """,
