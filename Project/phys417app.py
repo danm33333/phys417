@@ -49,7 +49,7 @@ st.title("EcoBirdNet, Bird Species Classifier")
 
 st.write(
     """
-    Upload an image of a Pacific Northwest bird species and EcoBirdNet will identify the species
+    Upload an image of a Pacific Northwest bird and EcoBirdNet will identify the species
     using a convolutional neural network (CNN).
     """
 )
