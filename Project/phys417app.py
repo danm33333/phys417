@@ -3,6 +3,13 @@ import torch
 import torch.nn as nn
 import numpy as np
 from PIL import Image
+from pathlib import Path
+
+# ---------------------------------------------------
+# Base directory (deployment-safe paths)
+# ---------------------------------------------------
+
+BASE_DIR = Path(__file__).parent
 
 # ---------------------------------------------------
 # Streamlit page setup
@@ -10,7 +17,6 @@ from PIL import Image
 
 st.set_page_config(
     page_title="EcoBirdNet",
-    page_icon="🐦",
     layout="centered"
 )
 
@@ -52,7 +58,9 @@ st.write(
 # Device configuration
 # ---------------------------------------------------
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device(
+    "cuda" if torch.cuda.is_available() else "cpu"
+)
 
 # ---------------------------------------------------
 # Constants
@@ -65,7 +73,7 @@ IMAGE_SIZE = 96
 # ---------------------------------------------------
 
 class_names = np.load(
-    "class_names.npy",
+    BASE_DIR / "class_names.npy",
     allow_pickle=True
 )
 
@@ -194,7 +202,7 @@ def load_model():
 
     model.load_state_dict(
         torch.load(
-            "EcoBirdNet_best_model_state_dict.pt",
+            BASE_DIR / "EcoBirdNet_best_model_state_dict.pt",
             map_location=device
         )
     )
@@ -452,18 +460,6 @@ if uploaded_file is not None:
             """,
             unsafe_allow_html=True
         )
-
-    # ---------------------------------------------------
-    # Processed image preview
-    # ---------------------------------------------------
-
-#    st.subheader("Processed CNN Input")
-
-#    st.image(
-#        processed_image,
-#        caption="Center-cropped and resized image",
-#        width=250
-#    )
 
 # ---------------------------------------------------
 # Footer
