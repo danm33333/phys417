@@ -49,7 +49,7 @@ st.title("EcoBirdNet, Bird Species Classifier")
 
 st.write(
     """
-    Upload a bird image and EcoBirdNet will identify the species
+    Upload an image of a Pacific Northwest bird species and EcoBirdNet will identify the species
     using a convolutional neural network (CNN).
     """
 )
@@ -470,7 +470,7 @@ st.markdown("---")
 st.markdown(
     """
     EcoBirdNet CNN Bird Species Classifier  
-    Built with Streamlit + PyTorch
+    Built with Streamlit + PyTorch  
     By Rasool Ray, Arthur Wang, and Daniel Michel for PHYS 417
     """
 )
