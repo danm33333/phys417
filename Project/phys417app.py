@@ -471,7 +471,7 @@ st.markdown(
     """
     EcoBirdNet CNN Bird Species Classifier  
     Built with Streamlit + PyTorch  
-    By Rasool Ray, Arthur Wang, and Daniel Michel for PHYS 417
+    By Rasool Ray, Arthur Wang, and Daniel Michel for PHYS 417  
     Disclaimer: this app is a work-in-progress, and the results may vary depending on the uploaded image
     """
 )
