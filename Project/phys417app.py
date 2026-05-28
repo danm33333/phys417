@@ -45,7 +45,7 @@ st.markdown(
 # Title
 # ---------------------------------------------------
 
-st.title("EcoBirdNet Bird Species Classifier")
+st.title("EcoBirdNet, Bird Species Classifier")
 
 st.write(
     """
@@ -471,5 +471,6 @@ st.markdown(
     """
     EcoBirdNet CNN Bird Species Classifier  
     Built with Streamlit + PyTorch
+    By Rasool Ray, Arthur Wang, and Daniel Michel for PHYS 417
     """
 )
