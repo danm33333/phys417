@@ -472,6 +472,9 @@ st.markdown(
     EcoBirdNet CNN Bird Species Classifier  
     Built with Streamlit + PyTorch  
     By Rasool Ray, Arthur Wang, and Daniel Michel for PHYS 417  
-    Disclaimer: this app is a work-in-progress, and the results may vary depending on the uploaded image
+    Disclaimer: this app is a work-in-progress, and the results may vary depending on the uploaded image.
+    Regional bird species local to the greater puget sound area represent the majority of the training data
+    used in building this CNN. This app has been developed by UW students to support PNW animal conservation efforts,
+    and to encourage interest in interdisciplinary science, as its main goal.
     """
 )
